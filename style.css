@@ -1,0 +1,143 @@
+* { /*reset css*/
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat, sans-serif;
+}
+
+body {
+    background-color: #e4e1d7;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    background-color: #410202;
+    padding: 20px;
+}
+
+.navbar h1 { /*pode ser que seja alterado*/
+    color: #d6c897;
+    font-size: 2em;
+    font-style: italic;
+}
+
+.menu {
+    display: flex;
+    gap: 24px;
+}
+
+.menu li {
+    list-style: none;
+}
+
+.menu a {
+    text-decoration: none; 
+    color: #d6c897;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+#about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    align-items: stretch;  /* Garante que ambos os lados tenham mesma altura */
+    padding-top: 36px;
+}
+
+
+.img-about img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+#about h2 {
+    border-bottom: 2px solid #410202;
+    padding-bottom: 16px;
+    margin-bottom: 32px;
+    font-style: italic;
+}
+
+#products {
+    margin: 4em 0;
+}
+
+#products h2 {
+    font-style: italic;
+    border-bottom: 2px solid #410202;
+    padding-bottom: 12px;
+    margin-bottom: 2em;
+}
+
+.products-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+}
+
+.products-item {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    padding: 8px;
+}
+
+.products-item img {
+    width: 100%;
+    height: 180px;
+    margin-bottom: 24px;
+    border-radius: 4px;
+}
+
+.products-item p {
+    margin-top: 16px;
+}
+
+.products-item button {
+    background-color: #410202;
+    color: #fff;
+    font-weight: bold;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    margin-top: 4em;
+    cursor: pointer;
+}
+
+.products-item button:hover {
+    background-color: #6b0c0c;
+}
+
+footer {
+    background-color: #410202;
+    padding: 2em;
+    text-align: center;
+}
+
+footer p {
+    color: #d6c897;
+}
+
+/*Responsividade - Celular*/
+@media screen and (max-width: 640px) {
+    
+}
+
+/*Responsividade - Tablet*/
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    
+}
